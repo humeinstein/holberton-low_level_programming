@@ -22,7 +22,7 @@ p = n % 10;
 	}
 	else if (p  < 6 && p != 0)
 	{
-	printf("Last digit %d is %d less than 6 and is not 0\n", n, p);
+	printf("Last digit %d is %d and is less than 6 and is not 0\n", n, p);
 	}
 	else
 	{
