@@ -21,7 +21,7 @@ p = n % 10;
 	}
 	else if (p == 0)
 	{
-	printf("Last digit of %d is 0 and is  0\n", n);
+	printf("Last digit of %d is %d and is 0\n", n, p);
 	}
 	else
 	{
