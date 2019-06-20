@@ -21,11 +21,11 @@ p = n % 10;
 	}
 	else if (p == 0)
 	{
-	printf("Last digit %d is %d and is less than 6 and is not 0\n", n, p);
+	printf("Last digit of %d is 0 and is  0\n", n);
 	}
 	else
 	{
-	printf("Last digit %d is %d and is less than 6 and is not 0\n", n, p);
+	printf("Last digit of %d is %d and is less than 6 and is not 0\n", n, p);
 	}
 	return (0);
 }
