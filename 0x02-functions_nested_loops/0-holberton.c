@@ -1,8 +1,11 @@
 #include "holberton.h"
-/*Our new headfile*/
-
-
-int main(void) {
+/**
+ * main - check the code for Holberton School students.
+ *
+ * ®eturn: Always 0.
+ */
+int main(void)
+{
 
 int c[9] = {72, 111, 108, 98, 101, 114, 116, 111, 110};
 int d;
