@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
  * _isalpha - entry
- * (int c) - parameter to see if lower
+ * (int c) - parameter to see if lowercase or uppercase
  * @c: number variable
- * Return: (0) - always
+ * Return: 1 if c is = to letter, uppercase or lowercase
  **/
 int _isalpha(int c)
 {
