@@ -2,8 +2,7 @@
 /**
  * _isalpha - entry
  * (int c) - parameter to see if lower
- * @c - number variable
- * function void print_alphabet void
+ * @c: number variable
  * Return: (0) - always
  **/
 int _isalpha(int c)
