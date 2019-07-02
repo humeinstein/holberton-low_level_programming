@@ -9,7 +9,6 @@
 void rev_string(char *s)
 {
 	int string_length(char *);
-	void reverse(char *);
 	int length, c;
 	char *begin, *end, temp;
 
