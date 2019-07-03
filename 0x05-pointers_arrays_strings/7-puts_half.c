@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * _strlen - function
+ * puts_half - function
  *
- * @s: char s
+ * @str: char s
  * Return: (length)
  */
 
@@ -13,11 +13,11 @@ void puts_half(char *str)
 	int length = 0;
 	int n = (length - 1) / 2;
 
-        while (str[length] != '\0')
-        {
-                length++;
-        }
-        if (length % 2 == 1)
+	while (str[length] != '\0')
+	{
+		length++;
+	}
+	if (length % 2 == 1)
 	{
 		for (i = 0 ; i <= length ; i++)
 		{
