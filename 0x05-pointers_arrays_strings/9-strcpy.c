@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  * _strcpy - char dest and src
- * @a: starts 0 and incrememnts through both strings
- *
+ * @dest: be identical to source
+ * @src: be identical to dest
  *
  * Return: dest which should be exact copy
  */
