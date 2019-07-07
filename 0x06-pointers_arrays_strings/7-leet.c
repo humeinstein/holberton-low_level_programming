@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
+ * leet - function
+ * @a: string to convert
  *
- *
- *
- *
+ * Return: a always
  *
  *
  */
