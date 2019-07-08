@@ -15,7 +15,6 @@ char *rot13(char *z)
 
 	while (z[x] != '\0')
 	{
-		x++;
 		for (y = 0 ; a[y] != '\0' ; y++)
 		{
 			if (z[x] == a[y])
@@ -24,6 +23,7 @@ char *rot13(char *z)
 				break;
 			}
 		}
+		x++;
 	}
 	return (z);
 }
