@@ -16,9 +16,9 @@ char *rot13(char *z)
 	while (z[x] != '\0')
 	{
 		x++;
-		for (y = 0 ; y < 58 ; y++)
+		for (y = 0 ; a[y] != '\0' ; y++)
 		{
-			if (z[x] == a[y])
+ 			if (z[x] == a[y])
 			{
 				z[x] = b[y];
 				break;
