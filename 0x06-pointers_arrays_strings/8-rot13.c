@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
+ * rot13 - rotate 13 char
+ * @z: string
  *
  *
- *
- *
- *
+ * Return: z
  */
 char *rot13(char *z)
 {
@@ -18,7 +18,7 @@ char *rot13(char *z)
 		x++;
 		for (y = 0 ; a[y] != '\0' ; y++)
 		{
- 			if (z[x] == a[y])
+			if (z[x] == a[y])
 			{
 				z[x] = b[y];
 				break;
