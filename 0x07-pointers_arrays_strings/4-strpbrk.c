@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- *
- *
- *
- *
+ * _strpbrk - char s char accept
+ * @s: string
+ * @accept: string containing acceptable bytes
+ * Return: s or null if not found
  */
 char *_strpbrk(char *s, char *accept)
 {
