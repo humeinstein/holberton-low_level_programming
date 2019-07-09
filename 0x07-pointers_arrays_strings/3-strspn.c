@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
+ * _strspn - function
+ * @s: string
+ * @accept: acceptable parts of string
  *
- *
- *
- *
- *
+ * Return: count3 always
  */
 unsigned int _strspn(char *s, char *accept)
 {
