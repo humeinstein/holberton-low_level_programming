@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- *
- *
- *
+ * _strchr - char s char c
+ * @s: string
+ * @c: char
  *
  *
  *
