@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _teeth -
+ * _teeth - int n int x
  * @n: given n
  * @x: use
  * Return: 0 or 1
