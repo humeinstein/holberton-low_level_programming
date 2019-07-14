@@ -3,6 +3,7 @@
  * main - program to print its name
  * @argc: show function name
  * @argv: argument count
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
