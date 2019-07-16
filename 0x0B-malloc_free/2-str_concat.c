@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _strdup - functio
- * @str: string
+ * str_concat - functio
+ * @s1: string
+ * @s2: string2
  * Return: null or d if working
  *
  */
@@ -17,9 +18,9 @@ char *str_concat(char *s1, char *s2)
 		s1 = '\0';
 	}
 	if (s2 == NULL)
-        {
-                s2 = '\0';
-        }
+	{
+		s2 = '\0';
+	}
 	for (count = 0 ; s1[count] != '\0' ; count++)
 	{
 	}
@@ -28,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	d = malloc(sizeof(char) *  s1[count] + s2[count2] + 1);
 	if (d)
-        {
+	{
 		for (x = 0 ; x <= count ; x++)
 		{
 			d[x] = s1[x];
