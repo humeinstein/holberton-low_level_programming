@@ -2,15 +2,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
- *
- *
- *
+ * _calloc - allocates memory for an array using malloc
+ * @nmemb: int nmemb is memory for an array
+ * @size: size needed
+ * Return: NULL or d the pointer to the space
  *
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int *d;
+	char *d;
 	unsigned int x;
 
 	if (nmemb == 0 || size == 0)
@@ -24,7 +24,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	for (x = 0 ; x < nmemb * size ; x++)
 	{
-		d[x] = nmemb;
+		d[x] = 0;
 	}
 	if (d == NULL)
 	{
