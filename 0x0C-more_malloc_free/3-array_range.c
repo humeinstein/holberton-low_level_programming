@@ -23,9 +23,9 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	for (x = 0 ; x < (max - min + 1) ; x++)
+	for (x = 0; x <= (max - min + 1) ; x++)
 	{
-		d[x] = p;
+		d[x] = p - 1;
 		p++;
 	}
 	return (d);
