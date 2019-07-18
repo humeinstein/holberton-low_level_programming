@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * string33_nconcat - functio
+ * string_nconcat - functio
  * @s1: string
  * @s2: string2
+ * @n: unsingined int
  * Return: null or d if working
  *
  */
@@ -34,21 +35,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	d = malloc(sizeof(char) *  (count + n + 1));
 	if (d == NULL)
 	{
-		free (d);
 		return (NULL);
 	}
 	if (d)
 	{
-		for (x = 0 ; x <= count ; x++)
+		for (x = 0 ; x < count ; x++)
 		{
 			d[x] = s1[x];
 		}
-		for (p = 0 ; p <= n ; p++)
+		for (p = 0 ; p < n ; p++)
 		{
 			d[count + p] = s2[p];
 		}
+		d[count + p] = '\0';
 		return (d);
 	}
-	free(d);
 	return (NULL);
 }
