@@ -2,11 +2,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *
- *
- *
- *
- *
+ * _strdup - duplicate string
+ * @str: string to duplicate
+ * Return: d(duplicated string)
  */
 char *_strdup(char *str)
 {
@@ -31,6 +29,13 @@ char *_strdup(char *str)
 	}
 	return (d);
 }
+/**
+ * new_dog - name age own
+ * @name: name
+ * @age: age
+ * @owner: owner
+ * Return: dg
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dg;
