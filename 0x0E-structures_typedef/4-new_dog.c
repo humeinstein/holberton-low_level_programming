@@ -27,6 +27,7 @@ char *_strdup(char *str)
 	{
 		d[count] = str[count];
 	}
+	d[count] = 0;
 	return (d);
 }
 /**
@@ -59,6 +60,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	dg->age = age;
-
 	return (dg);
 }
