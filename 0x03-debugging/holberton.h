@@ -1,6 +1,6 @@
 #ifndef HOLBERTON_H_
 #define HOLBERTON_H_
-
+int main(void);
 int largest_number(int a, int b, int c);
 int _putchar(char c);
 void print_alphabet(void);
