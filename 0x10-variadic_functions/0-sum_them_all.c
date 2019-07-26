@@ -1,11 +1,9 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 /**
- *
- *
- *
- *
- *
+ * sum_them_all - func that adds all ints
+ * @n: int
+ * @Return: 0 or sum
  */
 
 int sum_them_all(const unsigned int n, ...)
@@ -14,7 +12,7 @@ int sum_them_all(const unsigned int n, ...)
 	int sum = 0;
 	unsigned int x;
 
-	if(n == 0)
+	if (n == 0)
 	{
 		return (0);
 	}
@@ -24,5 +22,5 @@ int sum_them_all(const unsigned int n, ...)
 		sum += va_arg(vl, int);
 	}
 	va_end(vl);
-	return sum;
+	return (sum);
 }
