@@ -18,9 +18,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		b = va_arg(vl, char*);
 		if (b != NULL)
 			printf("%s", b);
-		else
+		else if
+		{
 			printf("%p", b);
-		if (separator != NULL && x < n - 1)
+		}
+		else (separator != NULL && x < n - 1)
 			printf("%s%s", separator, s);
 	}
 	printf("\n");
