@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-#include <stdargs.h>
 /**
  * print_strings - print strings
  * @separator: separator char
