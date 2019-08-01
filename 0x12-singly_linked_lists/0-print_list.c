@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- *
- *
- *
+ * print_list - print strings using list
+ * @h: pointer
+ * Return: x
  *
  */
 
@@ -22,5 +22,5 @@ size_t print_list(const list_t *h)
 		x++;
 		h = h->next;
 	}
-	return(x);
+	return (x);
 }
