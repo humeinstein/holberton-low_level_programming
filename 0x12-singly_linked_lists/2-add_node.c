@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- *
- *
- *
+ * add_node - function to add node
+ * @str: string
+ * Return: Head new node or NULL if null
  *
  *
  */
