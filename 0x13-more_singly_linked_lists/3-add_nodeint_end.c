@@ -1,6 +1,4 @@
 #include "lists.c"
-#include <stdlib.h>
-#include <stdio.h>
 /**
  * add_nodeint_end - add node to end of list
  * @head: pointer to next ele
