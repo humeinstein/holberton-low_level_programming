@@ -10,7 +10,7 @@ size_t listint_len(const listint_t *h);
 	listint_t newc;
 	newc = 0;
 
-	while (h != NULL)
+	while (h != '\0')
 	{
 		h = h->next;
 		newc++;
