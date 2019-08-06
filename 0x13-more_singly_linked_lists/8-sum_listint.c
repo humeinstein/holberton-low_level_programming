@@ -9,7 +9,7 @@ int sum_listint(listint_t *head)
 {
 	int x;
 
-	for (x = 0; head != '\o'; head = head->next)
+	for (x = 0; head != '\0'; head = head->next)
 		x = x + head->n;
 
 	return (x);
