@@ -14,10 +14,13 @@ int pop_listint(listint_t **head)
 	{
 		return (0);
 	}
-	new = *head;
-	x = new->x;
-	new = new->next;
-	free(*head);
-	*head = new;
+	else
+	{
+		new = *head;
+		x = new->x;
+		new = new->next;
+		free(*head);
+		*head = new;
+	}
 	return (x);
 }
