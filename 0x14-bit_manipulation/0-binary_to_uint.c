@@ -27,7 +27,7 @@ unsigned int binary_to_uint(const char *b)
 		{
 			c = b[x] - '0';
 			sum = sum + (pow * c);
-			pow *=  2;
+			pow <<= 1;
 		}
 		else
 			return (0);
