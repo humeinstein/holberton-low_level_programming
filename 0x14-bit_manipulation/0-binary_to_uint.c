@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
+ * binary_to_uint - function that converts a binary num to uint
+ * @b: string of 0 and 1
  *
- *
- *
- *
+ * Return: sum or 0 if null
  */
 unsigned int binary_to_uint(const char *b)
 {
@@ -21,7 +21,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		x++;
 	}
-	while (x-- != '\0')
+	while (x--)
 	{
 		if (b[x] == '0' || b[x] == '1')
 		{
