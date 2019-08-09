@@ -3,7 +3,7 @@
  * flip_bits - function that returns # of bits flipped form 1 to another
  * @n: int
  * @m: int
- * @Return: # of flips
+ * Return: # of flips
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
