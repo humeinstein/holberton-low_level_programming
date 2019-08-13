@@ -3,6 +3,7 @@
  * read_textfile - function that reads a text file and prints to standard outpt
  * @filename: file
  * @letters: # of letters to read and print
+ * Return: # of bytes or 0
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -11,11 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fileop;
 	char *space;
 
-	if (filename == NULL)
-	{
-		return (0);
-	}
-	space = malloc((char) * letters);
+	space = malloc(sizeof(char) * letters);
 	if (space == NULL)
 	{
 		free(space);
@@ -24,8 +21,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	filepp = open(filename, O_RDONLY);
 	fileop = read(filepp, space, letters);
 
+	if (filename == NULL)
+		return (0);
 	write(STDOUT_FILENO, space, fileop);
-
 	free(space);
 	close(filepp);
 	return (fileop);
