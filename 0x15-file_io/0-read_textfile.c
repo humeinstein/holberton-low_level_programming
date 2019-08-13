@@ -16,15 +16,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	if (letters == NULL)
 		return (0);
-	filepp = open(filename, O_RDONLY);
-	if (filepp == -1)
-		return (0);
 	space = malloc(sizeof(char) * letters);
 	if (space == NULL)
 	{
 		free(space);
 		return (0);
 	}
+	filepp = open(filename, O_RDONLY);
+	if (filepp == -1)
+		return (0);
 	fileop = read(filepp, space, letters);
 
 	write(STDOUT_FILENO, space, fileop);
