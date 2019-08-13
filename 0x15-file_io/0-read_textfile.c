@@ -11,7 +11,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fileop;
 	char *space;
 
-	space = malloc(letters);
+	if (filename == NULL)
+	{
+		return (0);
+	}
+	space = malloc((char) * letters);
 	if (space == NULL)
 	{
 		free(space);
@@ -20,9 +24,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	filepp = open(filename, O_RDONLY);
 	fileop = read(filepp, space, letters);
 
-	if (filename == NULL)
-		return (0);
 	write(STDOUT_FILENO, space, fileop);
+
 	free(space);
 	close(filepp);
 	return (fileop);
