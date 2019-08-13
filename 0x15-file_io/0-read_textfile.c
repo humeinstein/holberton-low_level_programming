@@ -20,11 +20,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	filepp = open(filename, O_RDONLY);
 	fileop = read(filepp, space, letters);
-	if (filepp == NULL)
-	{
-		return (0);
-	}
-
 	if (filename == NULL)
 		return (0);
 	write(STDOUT_FILENO, space, fileop);
