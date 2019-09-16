@@ -11,11 +11,11 @@ int sum_dlistint(dlistint_t *head)
 
 	if (new == NULL)
 	{
-		return (total);
+		return (0);
 	}
 	while (new != NULL)
 	{
-		total = total + search->n;
+		total = total + new->n;
 		new = new->next;
 	}
 	return (total);
