@@ -26,5 +26,7 @@ hash_table_t *hash_table_create(unsigned long int size)
     {
         return (NULL);
     }
+    for (; size; size--)
+        new->array[size - 1] = NULL;
     return (ht);
 }
