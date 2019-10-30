@@ -1,4 +1,3 @@
-z  
 #include "sort.h"
 /**
  * bubble_sort - assort integers in ascending order.
