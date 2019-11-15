@@ -1,0 +1,15 @@
+#makefile 
+
+CC := gcc
+
+SRC := main.c\
+	holberton.c
+
+NAME = holberton
+
+RM = rm -f
+
+OBJ = $(SRC:.c=.o)
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
