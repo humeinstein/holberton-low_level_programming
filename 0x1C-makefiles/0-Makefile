@@ -1,3 +1,3 @@
 #makefile
-all: holberton.c main.c m.h
+all: holberton.c m.h main.c
         gcc main.c holberton.c -o holberton
