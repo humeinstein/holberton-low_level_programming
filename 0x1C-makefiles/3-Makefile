@@ -2,8 +2,7 @@
 
 CC = gcc
 
-SRC = main.c\
-	holberton.c
+SRC = main.c holberton.c
 
 NAME = holberton
 
@@ -21,7 +20,6 @@ clean :
 oclean : 
 	$(RM) $(OBJ)
 
-fclean : 
-	clean oclean
+fclean : clean oclean
 
 re : oclean all
