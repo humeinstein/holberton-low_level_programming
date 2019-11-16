@@ -1,7 +1,5 @@
 #Makefile
 
-CFLAGS = -Wall -Werror -Wextra -pedantic
-
 CC = gcc
 
 SRC = holberton.c main.c
@@ -10,14 +8,16 @@ NAME = holberton
 
 RM = rm -f
 
-all: $(OBJ)
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+all : $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-clean:
+clean :
 	$(RM) *~ $(NAME)
-oclean:
+oclean :
 	$(RM) $(OBJ)
 
-fclean: clean oclean
+fclean : clean oclean
 
-re: oclean all
+re : oclean all
