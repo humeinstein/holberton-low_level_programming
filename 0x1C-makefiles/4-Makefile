@@ -4,7 +4,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 CC = gcc
 
-SRC = holberton.c main.CC
+SRC = holberton.c main.c
 
 NAME = holberton
 
