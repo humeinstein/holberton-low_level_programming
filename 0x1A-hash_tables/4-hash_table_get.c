@@ -8,8 +8,9 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
     char *hold;
-    unsigned int index;
+    unsigned long int index;
     hash_node_t *node;
+
 
     if (ht == NULL)
         return (NULL);
@@ -28,6 +29,6 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
     free(hold);
 
     if (node != NULL)
-        return (NULL)
+      return (NULL);
     return (node->value);
 }
